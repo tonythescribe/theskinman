@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>The Skin Man — A Techno‑Horror Serial by Tony Sarrecchia</title>
-  <meta name="description" content="Read the opening episodes of The Skin Man free—an Everything Evolves techno‑horror serial blending engineered undead, conspiracies, and survival.">
+  <title>The Skin Man — A Techno-Horror Serial by Tony Sarrecchia</title>
+  <meta name="description" content="Read the opening episodes of The Skin Man free—an Everything Evolves techno-horror serial blending engineered undead, conspiracies, and survival.">
   <link rel="canonical" href="https://theskinman.com/">
 
-  <!-- Favicons (ensure these live at the site root or update paths accordingly) -->
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -16,7 +16,7 @@
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="The Skin Man — Techno‑Horror Serial">
+  <meta property="og:title" content="The Skin Man — Techno-Horror Serial">
   <meta property="og:description" content="Read Episodes 1–2 free. Continue on Patreon.">
   <meta property="og:url" content="https://theskinman.com/">
   <meta property="og:image" content="https://theskinman.com/assets/cover.jpg">
@@ -26,21 +26,75 @@
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="preload" as="image" href="/assets/cover.jpg">
   <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Quick style overrides -->
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 0.5em;
+    }
+    p {
+      margin-bottom: 1.5em;
+    }
+    img.cover {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+    .cta {
+      display: inline-block;
+      padding: 0.75em 1.25em;
+      margin: 0.5em;
+      font-weight: bold;
+      border: 2px solid #61dafb;
+      color: #61dafb;
+      background: transparent;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+    .cta:hover {
+      background: #61dafb;
+      color: #000;
+    }
+    .cta.primary {
+      background: #61dafb;
+      color: #000;
+    }
+    .cta.primary:hover {
+      background: #4fc3e6;
+    }
+    iframe {
+      max-width: 100%;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <main class="wrap">
     <h1>The Skin Man</h1>
-    <p>A techno‑horror serial in the <em>Everything Evolves</em> universe by Tony Sarrecchia.</p>
+    <p>A techno-horror serial in the <em>Everything Evolves</em> universe by Tony Sarrecchia.</p>
 
-    <img
-      src="/assets/cover.jpg"
-      alt="The Skin Man cover — techno‑horror serial by Tony Sarrecchia"
-      width="1600" height="2400"  <!-- set to your image’s real pixel size -->
-      style="max-width:50%;height:auto;display:block;margin:1rem auto;">
+    <img src="/assets/cover.jpg"
+         alt="The Skin Man cover — techno-horror serial by Tony Sarrecchia"
+         class="cover">
 
     <p>
-      <a href="https://www.tonysarrecchia.com" target="_blank" rel="noopener">Read Episodes 1–2 Free</a> |
-      <a href="https://patreon.com/tonysarrecchia" target="_blank" rel="noopener">Continue on Patreon</a>
+      <a href="https://www.tonysarrecchia.com" target="_blank" rel="noopener" class="cta primary">Read Episodes 1–2 Free</a>
+      <a href="https://patreon.com/tonysarrecchia" target="_blank" rel="noopener" class="cta">Continue on Patreon</a>
     </p>
 
     <!-- Substack signup embed -->
