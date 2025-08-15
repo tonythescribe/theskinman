@@ -22,12 +22,10 @@
   <meta property="og:image" content="https://theskinman.com/assets/cover.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="preload" as="image" href="/assets/cover.jpg">
   <meta name="theme-color" content="#0a0a0a">
 
-  <!-- Quick style overrides -->
   <style>
     body {
       margin: 0;
@@ -35,20 +33,26 @@
       background: #0a0a0a;
       color: #f0f0f0;
       text-align: center;
-      padding: 2rem 1rem;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .wrap {
       max-width: 900px;
       margin: auto;
+      padding: 0 1rem;
     }
     h1 {
       font-size: clamp(2rem, 5vw, 3.5rem);
       margin-bottom: 0.5em;
     }
     p {
-      margin-bottom: 1.5em;
+      margin-bottom: 1em;
     }
     img.cover {
+      max-height: 60vh; /* Cover image takes up most of the viewport height */
+      width: auto;
       max-width: 100%;
       height: auto;
       border-radius: 8px;
@@ -79,7 +83,7 @@
     }
     iframe {
       max-width: 100%;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
   </style>
 </head>
