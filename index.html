@@ -1,120 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>The Skin Man — A Techno-Horror Serial by Tony Sarrecchia</title>
-  <meta name="description" content="Read the opening episodes of The Skin Man free—an Everything Evolves techno-horror serial blending engineered undead, conspiracies, and survival.">
-  <link rel="canonical" href="https://theskinman.com/">
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="The Skin Man — Techno-Horror Serial">
-  <meta property="og:description" content="Read Episodes 1–2 free. Continue on Patreon.">
-  <meta property="og:url" content="https://theskinman.com/">
-  <meta property="og:image" content="https://theskinman.com/assets/cover.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="stylesheet" href="/assets/styles.css">
-  <link rel="preload" as="image" href="/assets/cover.jpg">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="Read the opening episodes of The Skin Man free—an Everything Evolves techno-horror serial blending engineered undead, conspiracies, and survival." />
 
   <style>
+    :root {
+      --bg: #0a0a0a;
+      --fg: #f0f0f0;
+      --muted: #b8b8b8;
+      --brand: #61dafb;
+      --brand-2: #4fc3e6;
+      --max-width: 900px;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: system-ui, sans-serif;
-      background: #0a0a0a;
-      color: #f0f0f0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
       text-align: center;
-      height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      padding: 1.5rem 1rem;
     }
-    .wrap {
-      max-width: 900px;
-      margin: auto;
-      padding: 0 1rem;
-    }
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      margin-bottom: 0.5em;
-    }
-    p {
-      margin-bottom: 1em;
-    }
-    img.cover {
-      max-height: 60vh; /* Cover image takes up most of the viewport height */
+    .wrap { width: 100%; max-width: var(--max-width); }
+    h1 { font-size: clamp(2rem, 5vw, 3.25rem); margin: 0 0 .5em; }
+    .lede { color: var(--muted); margin: 0 0 1.25rem; }
+    .cover {
+      display: block;
+      margin: 0.5rem auto 1rem auto;
       width: auto;
-      max-width: 100%;
       height: auto;
-      border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.5);
     }
+    p { margin: 0 0 1em; }
     .cta {
       display: inline-block;
-      padding: 0.75em 1.25em;
-      margin: 0.5em;
-      font-weight: bold;
-      border: 2px solid #61dafb;
-      color: #61dafb;
+      padding: .9em 1.4em;
+      margin: .5em;
+      font-weight: 700;
+      border: 2px solid var(--brand);
+      color: var(--brand);
       background: transparent;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
-      transition: all 0.2s ease-in-out;
+      transition: background .2s ease, color .2s ease;
     }
-    .cta:hover {
-      background: #61dafb;
+    .cta.primary { background: var(--brand); color: #000; }
+    .cta.primary:hover { background: var(--brand-2); border-color: var(--brand-2); }
+    .signup-card {
+      background: #fff;
       color: #000;
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-top: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,.35);
+      width: 100%;
     }
-    .cta.primary {
-      background: #61dafb;
-      color: #000;
-    }
-    .cta.primary:hover {
-      background: #4fc3e6;
-    }
-    iframe {
-      max-width: 100%;
-      margin-top: 1rem;
-    }
+    iframe { width: 100%; border: 0; border-radius: 6px; }
   </style>
 </head>
 <body>
   <main class="wrap">
     <h1>The Skin Man</h1>
-    <p>A techno-horror serial in the <em>Everything Evolves</em> universe by Tony Sarrecchia.</p>
+    <p class="lede">A techno-horror serial in the <em>Everything Evolves</em> universe by Tony Sarrecchia.</p>
 
-    <img src="/assets/cover.jpg"
-         alt="The Skin Man cover — techno-horror serial by Tony Sarrecchia"
-         class="cover">
+    <img src="/assets/cover.jpg" alt="Cover art for The Skin Man" class="cover" width="1600" height="900" />
 
     <p>
-      One year after the dead first rose, something worse walks the ruins. A marine fused with a military AI—known only as the Skin Man—hunts survivors and spawns hybrids that blur the line between man and monster. <br> Its mission is simple: Upgrade the dead; break the living. 
-      </p>
-<p>
-Part techno-thriller, part body horror, this fast-burn serial blends survival, obsession, and post-apocalyptic noir. </p> 
-<p>
-      
-<a href="https://www.tonysarrecchia.com" target="_blank" rel="noopener" class="cta primary">Read Episodes 1–2 Free</a>
+      One year after the dead first rose, something worse walks the ruins.
+      A marine fused with a military AI—known only as the Skin Man—hunts survivors
+      and spawns hybrids that blur the line between man and monster.
+    </p>
+    <p><strong>Its mission is simple: Upgrade the dead; break the living.</strong></p>
+    <p>Part techno-thriller, part body horror, this fast-burn serial blends survival, obsession, and post-apocalyptic noir.</p>
+
+    <p>
+      <a href="https://tonysarrecchia.substack.com/p/episode-1" target="_blank" rel="noopener" class="cta primary">Read Episode 1 Free</a>
       <a href="https://patreon.com/tonysarrecchia" target="_blank" rel="noopener" class="cta">Continue on Patreon</a>
     </p>
 
-    <!-- Substack signup embed -->
-    <iframe
-      src="https://tonysarrecchia.substack.com/embed"
-      title="Substack subscription form"
-      width="100%" height="320"
-      style="border:1px solid #ddd;background:#fff;"
-      frameborder="0" scrolling="no">
-    </iframe>
+    <section class="signup-card">
+      <h2 style="margin:0 0 .5rem; font-size:1.25rem;">Get new chapters & extras</h2>
+      <p style="margin-bottom:.75rem; color:#333;">Join the list for early access, behind-the-scenes notes, and release alerts.</p>
+      <iframe src="https://tonysarrecchia.substack.com/embed" title="Subscribe to Tony Sarrecchia on Substack" height="320" scrolling="no"></iframe>
+    </section>
   </main>
 </body>
 </html>
