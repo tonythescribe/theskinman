@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=.5" />
-  <title>The Skin Man</title>
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>The Skin Man — A Techno-Horror Serial by Tony Sarrecchia</title>
+  <meta name="description" content="Read the opening episodes of The Skin Man free—an Everything Evolves techno-horror serial blending engineered undead, conspiracies, and survival." />
+
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --fg: #f0f0f0;
+      --muted: #b8b8b8;
+      --brand: #61dafb;
+      --brand-2: #4fc3e6;
+      --max-width: 900px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem 1rem;
+    }
+    .wrap { width: 100%; max-width: var(--max-width); }
+    h1 { font-size: clamp(2rem, 5vw, 3.25rem); margin: 0 0 .5em; }
+    .lede { color: var(--muted); margin: 0 0 1.25rem; }
+    .cover {
+      display: block;
+      margin: 0.5rem auto 1rem auto;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    }
+    p { margin: 0 0 1em; }
+    .cta {
+      display: inline-block;
+      padding: .9em 1.4em;
+      margin: .5em;
+      font-weight: 700;
+      border: 2px solid var(--brand);
+      color: var(--brand);
+      background: transparent;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background .2s ease, color .2s ease;
+    }
+    .cta.primary { background: var(--brand); color: #000; }
+    .cta.primary:hover { background: var(--brand-2); border-color: var(--brand-2); }
+    .signup-card {
+      background: #fff;
+      color: #000;
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-top: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,.35);
+      width: 100%;
+    }
+    iframe { width: 100%; border: 0; border-radius: 6px; }
+  </style>
 </head>
 <body>
   <h1>The Skin Man</h1>
@@ -24,4 +85,4 @@ frameborder="0"
 scrolling="no">
 </iframe>
 </body>
-</html> 
+</html>
