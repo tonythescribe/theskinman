@@ -51,10 +51,12 @@
       background: transparent;
       border-radius: 8px;
       text-decoration: none;
-      transition: background .2s ease, color .2s ease;
+      transition: background .2s ease, color .2s ease, border-color .2s ease;
     }
     .cta.primary { background: var(--brand); color: #000; }
     .cta.primary:hover { background: var(--brand-2); border-color: var(--brand-2); }
+    .cta:hover { background: rgba(97,218,251,.12); }
+
     .signup-card {
       background: #fff;
       color: #000;
@@ -63,26 +65,40 @@
       margin-top: 2rem;
       box-shadow: 0 8px 24px rgba(0,0,0,.35);
       width: 100%;
+      text-align: left;
     }
+    .signup-card h2 { margin: 0 0 .5rem; }
+    .signup-card p { margin: 0 0 1rem; color: #222; }
     iframe { width: 100%; border: 0; border-radius: 6px; }
   </style>
 </head>
+
 <body>
-  <h1>The Skin Man</h1>
-  <p>A techno-horror serial in the <em>Everything Evolves</em> universe by Tony Sarrecchia.</p>
-  <img src="assets/cover.jpg" alt="The Skin Man cover" style="max-width:50%;" />
-  <p>
-    <a href="https://www.tonysarrecchia.com">Read Episodes 1–2 Free</a> |
-    <a href="https://www.amazon.com/Skin-Man-Tony-Sarrecchia-ebook/dp/B0FRH95QMD">Buy on Amazon</a> |
-    <a href="https://books2read.com/u/bOOzgJ"> Buy at Apple, Kobo, and others</a> | </p>
-  <!-- Substack signup embed -->
-<iframe
-src="https://tonysarrecchia.substack.com/embed"
-width="100%"
-height="320"
-style="border:1px solid #ddd; background:#fff;"
-frameborder="0"
-scrolling="no">
-</iframe>
+  <main class="wrap">
+    <h1>The Skin Man</h1>
+    <p class="lede">A techno-horror serial in the <em>Everything Evolves</em> universe by Tony Sarrecchia.</p>
+
+    <img class="cover" src="assets/cover.jpg" alt="The Skin Man cover" />
+
+    <p>
+      <a class="cta primary" href="https://www.tonysarrecchia.com">Read Episodes 1–2 Free</a>
+      <a class="cta" href="https://www.amazon.com/Skin-Man-Tony-Sarrecchia-ebook/dp/B0FRH95QMD">Buy on Amazon</a>
+      <a class="cta" href="https://books2read.com/u/bOOzgJ">Apple, Kobo, and more</a>
+    </p>
+
+    <section class="signup-card" aria-label="Newsletter signup">
+      <h2>Get new episodes & updates</h2>
+      <p>Subscribe on Substack for release announcements, bonus material, and behind-the-scenes notes.</p>
+
+      <iframe
+        src="https://tonysarrecchia.substack.com/embed"
+        height="320"
+        style="border:1px solid #ddd; background:#fff;"
+        frameborder="0"
+        scrolling="no"
+        title="Substack signup form">
+      </iframe>
+    </section>
+  </main>
 </body>
 </html>
